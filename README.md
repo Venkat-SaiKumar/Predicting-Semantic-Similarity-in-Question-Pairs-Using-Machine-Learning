@@ -13,3 +13,34 @@ The dataset has 404,290 rows and 6 columns: `id`, `qid1`, `qid2`, `question1`, `
 
 This initial exploration sets the stage for further analysis and modeling by revealing data distribution and potential issues with question repetition.
 
+
+I have tried different methods in this project 
+
+Method 1
+Here's a description of code and results:
+
+**Overview:**
+I have  performed a machine learning analysis to predict whether a pair of questions are duplicates using a sample of 30,000 rows from your dataset.
+
+1. **Data Preparation:**
+   - **Data Sample:** Selected 30,000 random samples from the original dataset.
+   - **Missing Values:** No missing values in the sampled data.
+   - **Vectorization:** Applied `CountVectorizer` to convert questions into a feature matrix with 3,000 features for each question, resulting in a combined feature matrix of 6,000 features.
+
+2. **Modeling:**
+   - **Random Forest Classifier:** 
+     - **Accuracy:** 74.2% on the test set.
+   - **XGBoost Classifier:** 
+     - **Accuracy:** 73.3% on the test set.
+     - **Warning:** The use of label encoding is deprecated, and the default evaluation metric has changed in recent XGBoost versions.
+
+**Key Insights:**
+- Both Random Forest and XGBoost models achieved comparable accuracy, indicating that either method can be effective for this classification task.
+- The accuracy scores suggest that the models perform reasonably well, but there's room for improvement, possibly through hyperparameter tuning or using advanced text processing techniques.
+
+This initial analysis provides a solid foundation for further experimentation with model optimization and additional feature engineering.
+
+
+Method 2
+
+
