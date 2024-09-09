@@ -91,5 +91,42 @@ These features aim to capture the structure, content, and similarity of the two 
 
 Method 3
 
+Text Preprocessing
+
+The code starts by loading a dataset of question pairs and their corresponding labels (duplicate or not). It then applies various preprocessing techniques to the text data, including:
+
+Tokenization: splitting the text into individual words or tokens.
+Stopword removal: removing common words like "the", "and", etc. that do not add much value to the meaning of the text.
+Stemming or Lemmatization: reducing words to their base form (e.g., "running" becomes "run").
+Vectorization: converting the text data into numerical vectors that can be processed by machine learning algorithms.
+Feature Engineering
+
+The code extracts various features from the preprocessed text data, including:
+
+Basic features: length of the questions, number of words, common words, etc.
+Token-based features: features extracted from the tokens, such as token frequency, token co-occurrence, etc.
+Fuzzy matching features: features that measure the similarity between the two questions, such as Levenshtein distance, Jaro-Winkler distance, etc.
+Bag-of-words (BoW) features: features that represent the frequency of each word in the questions.
+Model Training
+
+The code trains a Random Forest Classifier on the extracted features to predict whether a pair of questions is duplicate or not.
+
+Model Deployment
+
+The trained model is saved to disk using the pickle module, which allows it to be loaded and used in the future without having to retrain it.
+
+Query Point Creator
+
+The code defines a function query_point_creator that takes a pair of questions as input, preprocesses them, and creates a feature vector that can be used to make predictions with the trained model.
+
+Example Usage
+
+The code provides an example of using the query_point_creator function to create a feature vector for a pair of questions and then using the trained model to predict whether they are duplicate or not.
+
+Overall, the code provides a comprehensive implementation of a text classification system for duplicate question detection, including text preprocessing, feature engineering, model training, and model deployment.
+
+
+
+
 
 
