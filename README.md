@@ -1,0 +1,2 @@
+# Predicting-Semantic-Similarity-in-Question-Pairs-Using-Machine-Learning
+Developed a model to predict semantic similarity between question pairs, using XGBoost, Random Forest, vectorization, and tokenization. Addressed challenges like subjective labeling and noisy data. Exploratory analysis helped spot inconsistencies, improving accuracy and deepening my understanding of noisy datasets and human-generated labels.
